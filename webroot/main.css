@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Blender Book';
+    src: url('fonts/Blender-Book.woff2') format('woff2'),url('fonts/Blender-Book.woff') format('woff');
+    font-weight: 400
+}
+
+body {
+    background-color: black;
+}
+
+body, body * {
+    font-family: 'Blender Book', Fallback, sans-serif;
+    font-weight: 400;
+}
+
+* {
+    scrollbar-width: auto;
+    scrollbar-color: rgba(0,5,10,.4) transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,.4);
+    border-radius: 5px;
+}
+
+.tinted, .frosted {
+    border-radius: 3px;
+    border: 1px solid rgba(255,255,255,.2);
+}
+
+.tinted {
+    background-color: rgba(0,5,10,.5);
+    color: rgba(255,255,255,.5);
+    padding: 10px;
+}
+
+.frosted {
+    background-color: rgba(240,240,240,.5);
+    color: rgba(255,255,255,.5);
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    text-align: center;
+    bottom: 10px;
+}
+.overlay button {
+    cursor: pointer;
+    height: 60px;
+    border: 0;
+    font-size: 2rem;
+    padding: 5px 15px;
+    background-color: rgba(0, 16, 32, .6);
+    border-radius: 6px;
+    color: white;
+}
+.overlay button:hover {
+    background-color: rgba(0, 40, 80, 1);
+}

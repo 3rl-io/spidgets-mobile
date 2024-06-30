@@ -1,0 +1,8 @@
+# IntelliJ-IDEA
+*.iml
+.idea/
+.idea_modules/
+
+package-lock.json
+node_modules
+bun.lockb
